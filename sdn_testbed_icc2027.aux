@@ -1,0 +1,104 @@
+\relax 
+\citation{McKeown2008OpenFlow}
+\citation{McKeown2008OpenFlow}
+\citation{Kreutz2015SDNSurvey}
+\citation{cbench2012}
+\citation{Rotsos2012OFLOPS}
+\citation{wcbench2015}
+\citation{rfc8456}
+\citation{Koulouras2022RealWorld,Cabarkapa2022TreeTopology,Ali2024Comparison}
+\citation{RyuFramework}
+\citation{iperf3}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\newlabel{sec:intro}{{I}{1}{}{section.1}{}}
+\citation{cbench2012}
+\citation{zhu2019benchmarking}
+\citation{Rotsos2012OFLOPS}
+\citation{wcbench2015}
+\citation{Shalimov2013HCprobe}
+\citation{rfc8456}
+\citation{rfc5180}
+\citation{Lantz2010Mininet}
+\citation{Koulouras2022RealWorld}
+\citation{Cabarkapa2022TreeTopology}
+\citation{Ali2024Comparison}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work and Limitations of Existing Tools}{2}{}\protected@file@percent }
+\newlabel{sec:related}{{II}{2}{}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Synthetic Benchmarking Tools}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}IETF Benchmarking Standards and Gaps}{2}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Comparison of SDN Benchmarking Approaches}}{2}{}\protected@file@percent }
+\newlabel{tab:comparison}{{I}{2}{}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Academic Studies Using Mininet and iPerf}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Testbed Architecture and Design}{2}{}\protected@file@percent }
+\newlabel{sec:design}{{III}{2}{}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Overview}{2}{}\protected@file@percent }
+\citation{RyuFramework}
+\citation{Xiong2016QueueingSDN}
+\citation{Lantz2010Mininet}
+\citation{ovs}
+\citation{iperf3}
+\citation{psutil}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Testbed architecture. The orchestration layer coordinates all components; the aggregator consolidates per-run outputs.}}{3}{}\protected@file@percent }
+\newlabel{fig:architecture}{{1}{3}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Instrumented Controller}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Network Emulator and Topology Layer}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Traffic Generator}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Testbed orchestration pipeline (\texttt  {run\_experiment.sh}).}}{3}{}\protected@file@percent }
+\newlabel{alg:pipeline}{{2}{3}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-E}}System Monitor}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-F}}Orchestration and Reproducibility}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-G}}Metrics and Aggregation}{3}{}\protected@file@percent }
+\citation{RyuFramework}
+\citation{Xiong2016QueueingSDN}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Validation Experiment Parameters}}{4}{}\protected@file@percent }
+\newlabel{tab:params}{{II}{4}{}{table.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Testbed Validation: A Case Study with Ryu}{4}{}\protected@file@percent }
+\newlabel{sec:demo}{{IV}{4}{}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Experimental Configuration}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Throughput and Packet-In Rate}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Per-Event Processing Latency}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Throughput and Packet-In rate vs.\ flow rate. Error bars show one standard deviation across 10 repetitions.}}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Aggregate throughput vs.\ flow rate}}}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Packet-In rate vs.\ flow rate}}}{4}{}\protected@file@percent }
+\newlabel{fig:throughput_packetin}{{3}{4}{}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Processing latency and CPU usage vs.\ flow rate. p50 is near zero for both topologies; p95 reveals large topology-dependent differences invisible to RTT-based measurements. Error bars show one standard deviation.}}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Processing latency (p50 and p95) vs.\ flow rate}}}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {CPU usage vs.\ flow rate}}}{4}{}\protected@file@percent }
+\newlabel{fig:latency}{{4}{4}{}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Scalability with Host Count}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Discussion}{4}{}\protected@file@percent }
+\newlabel{sec:discussion}{{V}{4}{}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}What the Testbed Revealed}{4}{}\protected@file@percent }
+\citation{Shalimov2013HCprobe}
+\citation{Berde2014ONOS}
+\bibstyle{IEEEtran}
+\bibdata{references_icc2027}
+\bibcite{McKeown2008OpenFlow}{1}
+\bibcite{Kreutz2015SDNSurvey}{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Scalability: throughput, Packet-In rate, p95 latency, and CPU vs.\ host count. Star p95 plateaus at ${\sim }17$\,ms beyond $N{=}32$; fat-tree remains lower across all scales.}}{5}{}\protected@file@percent }
+\newlabel{fig:scalability}{{5}{5}{}{figure.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Mean Performance Metrics by Topology and Host Count}}{5}{}\protected@file@percent }
+\newlabel{tab:hosts}{{III}{5}{}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Limitations of the Demonstration}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Testbed Roadmap}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{5}{}\protected@file@percent }
+\newlabel{sec:conclusion}{{VI}{5}{}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{References}{5}{}\protected@file@percent }
+\bibcite{cbench2012}{3}
+\bibcite{Rotsos2012OFLOPS}{4}
+\bibcite{wcbench2015}{5}
+\bibcite{rfc8456}{6}
+\bibcite{Koulouras2022RealWorld}{7}
+\bibcite{Cabarkapa2022TreeTopology}{8}
+\bibcite{Ali2024Comparison}{9}
+\bibcite{RyuFramework}{10}
+\bibcite{iperf3}{11}
+\bibcite{zhu2019benchmarking}{12}
+\bibcite{Shalimov2013HCprobe}{13}
+\bibcite{rfc5180}{14}
+\bibcite{Lantz2010Mininet}{15}
+\bibcite{Xiong2016QueueingSDN}{16}
+\bibcite{ovs}{17}
+\bibcite{psutil}{18}
+\bibcite{Berde2014ONOS}{19}
+\gdef \@abspage@last{6}
